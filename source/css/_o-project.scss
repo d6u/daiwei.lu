@@ -1,0 +1,36 @@
+.o-project {
+}
+
+.o-project__keywords {
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.o-project__word {
+  margin-right: 5px;
+
+  &--emberjs {
+    color: #ff6e56;
+  }
+  &--nodejs {
+    color: #80bd01;
+  }
+  &--sass {
+    color: #c6538c;
+  }
+  &--elasticsearch {
+    color: #31beb1;
+  }
+}
+
+.o-project__title {
+  font-family: Francois One, sans-serif;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.o-project__description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}

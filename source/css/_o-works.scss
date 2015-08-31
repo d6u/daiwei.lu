@@ -1,0 +1,22 @@
+.o-works {
+  margin-top: 200px;
+  padding: 0 80px;
+}
+
+.o-works__header {
+  font-size: 28px;
+}
+
+.o-works__container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+  > * {
+    min-width: 300px;
+    max-width: 350px;
+    margin-bottom: 40px;
+  }
+}

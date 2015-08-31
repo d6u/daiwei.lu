@@ -1,0 +1,26 @@
+.o-hero {
+  @extend %clearfix;
+  margin-top: 100px;
+}
+
+.o-hero__container {
+  width: 700px;
+  float: right;
+  margin-right: 50px;
+}
+
+.o-hero__paragraph {
+  font-size: 28px;
+  line-height: 28px * 1.5;
+
+  &--secondary {
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+.o-hero__name {
+  color: $blue;
+  font-size: 36px;
+}

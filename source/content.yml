@@ -1,0 +1,46 @@
+works:
+  - header: When I'm at work
+    projects:
+      - title: PubNation.com
+        keywords:
+          - Ember.js
+          - Node.js
+          - D3.js
+          - Babel.js
+          - Sass
+          - ElasticSearch
+        description: At curiosity media, I helped build not only UIs, but backend modules.
+      - title: Reporter Script
+        keywords:
+          - Vanilla JS
+          - Selenium
+          - Karma
+          - Browserify
+        description: This is a library to be loaded on webpages to collect user AD complaints.
+      - title: Chrome Extension
+        keywords:
+          - Chrome API
+          - Browserify
+        description: It integrates with Reporter library, provided more information when reporting an AD.
+      - title: HTML Emails
+        description: Well... I'm glad we didn't have to be compatible with Outlook 2000.
+
+  - header: In my spare time
+    projects:
+      - title: Web Playground
+        keywords:
+          - Node.js
+        description: A command line utility to quickly scaffolds a live reloading server with builtin preprocessors for HTML, JavaScript and CSS.
+      - title: Magic Board
+        keywords:
+          - React.js
+          - Flux
+          - Firebase
+          - Webpack
+          - Babel.js
+        description: A real time Magic the Gathering life counter, with which two browsers can be connected and changes in life will be reflected instantaneously.
+      - title: Static Pipeline
+        keywords:
+          - Node.js
+          - Babel.js
+        description: A framework for building static webpages. It comes with asset hashing utilities to bust browser cache by appending hash strings to urls.

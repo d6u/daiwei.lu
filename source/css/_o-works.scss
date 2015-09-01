@@ -1,6 +1,8 @@
 .o-works {
-  margin-top: 200px;
   padding: 0 80px;
+  & + & {
+    margin-top: 60px;
+  }
 }
 
 .o-works__header {
@@ -9,14 +11,18 @@
 
 .o-works__container {
   margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: stretch;
 
   > * {
-    min-width: 300px;
-    max-width: 350px;
+    width: 400px;
     margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background-color: grey;
+      box-shadow: 0 0 0 20px grey;
+    }
   }
 }

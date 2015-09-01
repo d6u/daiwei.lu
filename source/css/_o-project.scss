@@ -1,9 +1,13 @@
 .o-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .o-project__keywords {
   font-weight: 900;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .o-project__word {
@@ -11,6 +15,9 @@
 
   &--emberjs {
     color: #ff6e56;
+  }
+  &--d3js {
+    color: #F5864A;
   }
   &--nodejs {
     color: #80bd01;
@@ -21,16 +28,33 @@
   &--elasticsearch {
     color: #31beb1;
   }
+  &--es6 {
+    color: #f5da55;
+  }
+  &--vanillajs {
+    color: #f5da55;
+  }
+  &--selenium {
+    color: #B0B0B1;
+  }
+  &--karma {
+    color: #41BEAE;
+  }
+  &--browserify {
+    color: #E6B35A;
+  }
+  &--chromeapi {
+    color: #508FBF;
+  }
 }
 
 .o-project__title {
   font-family: Francois One, sans-serif;
   font-size: 36px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .o-project__description {
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 10px;
 }

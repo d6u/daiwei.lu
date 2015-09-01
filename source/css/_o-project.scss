@@ -28,7 +28,8 @@
   &--elasticsearch {
     color: #31beb1;
   }
-  &--es6 {
+  &--es6,
+  &--babeljs {
     color: #f5da55;
   }
   &--vanillajs {
@@ -46,12 +47,44 @@
   &--chromeapi {
     color: #508FBF;
   }
+  &--reactjs {
+    color: #5DDBFD;
+  }
+  &--flux {
+    color: #2E8531;
+  }
+  &--webpack {
+    color: #6A93D9;
+  }
+  &--firebase {
+    color: #FFDB3F;
+  }
+  &--reactiveextension {
+    color: #B80B8D;
+  }
+  &--swift {
+    color: #FE6C2D;
+  }
+  &--iossdk {
+    color: #000101;
+  }
 }
 
 .o-project__title {
   font-family: Francois One, sans-serif;
   font-size: 36px;
   margin-bottom: 10px;
+
+  a {
+    transition: color 300ms;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.o-project__repo-icon {
+  margin-left: 20px;
 }
 
 .o-project__description {

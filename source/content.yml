@@ -16,7 +16,7 @@ works:
           - Selenium
           - Karma
           - Browserify
-        description: This is a library to be loaded on webpages to collect user AD complaints.
+        description: This is a library to be loaded on customers' webpages to collect user AD complaints.
       - title: Chrome Extension
         keywords:
           - Chrome API
@@ -25,13 +25,16 @@ works:
       - title: HTML Emails
         description: Well... I'm glad we didn't have to be compatible with Outlook 2000.
 
-  - header: In my spare time
+  - header: I spend my spare time on
     projects:
       - title: Web Playground
+        link: https://github.com/d6u/web-playground
         keywords:
           - Node.js
         description: A command line utility to quickly scaffolds a live reloading server with builtin preprocessors for HTML, JavaScript and CSS.
       - title: Magic Board
+        link: http://magic-board.daiwei.lu
+        github: https://github.com/d6u/magic-board
         keywords:
           - React.js
           - Flux
@@ -39,7 +42,27 @@ works:
           - Webpack
           - Babel.js
         description: A real time Magic the Gathering life counter, with which two browsers can be connected and changes in life will be reflected instantaneously.
+      - title: Avetuc
+        link: https://github.com/d6u/Avetuc
+        keywords:
+          - Reactive Extension
+          - Swift
+          - iOS SDK
+        description: An iOS app (yet to be approved by Apple) to aggregate Twitter timeline by friends and mark unread tweets, so you never miss any.
+      - title: TapLabel
+        link: https://github.com/d6u/TapLabel
+        keywords:
+          - Swift
+          - iOS SDK
+        description: A rich text label that allows combining and tapping on links within text.
+      - title: LarryBird
+        link: https://github.com/d6u/LarryBird
+        keywords:
+          - Swift
+          - iOS SDK
+        description: A Tiwtter client library for iOS.
       - title: Static Pipeline
+        link: https://github.com/d6u/StaticPipeline
         keywords:
           - Node.js
           - Babel.js

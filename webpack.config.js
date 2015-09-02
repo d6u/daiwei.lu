@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css!autoprefixer!sass?outputStyle=expanded'),
+        loader: ExtractTextPlugin.extract('style', 'css!autoprefixer!sass?outputStyle=expanded'),
       },
     ],
   },

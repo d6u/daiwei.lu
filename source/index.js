@@ -1,4 +1,4 @@
-import './css/index.scss';
+import './index.scss';
 import _ from 'lodash';
 
 const select = selector => document.querySelectorAll(selector);
@@ -42,28 +42,5 @@ const removeClass = _.curry((element, className) =>
 
   for (let btn of buttons) {
     listen(btn, 'click', handleClickEvent);
-  }
-}
-
-// Mouseover projects
-{
-  const container       = select('.o-container__page--works')[0];
-  const createClassName = showcase => `o-container__page--showcase-${showcase}`;
-  const getShowcase     = _.partial(_.get, _, 'target.dataset.showcase');
-
-  {
-    let handleMouseEnter  = _.flow(getShowcase, createClassName, addClass(container));
-    let eachElement       = _.partial(_.forEach, _, listen(_, 'mouseenter', handleMouseEnter));
-    let reactOnMouseEnter = _.flow(select, eachElement);
-
-    reactOnMouseEnter('[data-showcase]');
-  }
-
-  {
-    let handleMouseEnter  = _.flow(getShowcase, createClassName, removeClass(container));
-    let eachElement       = _.partial(_.forEach, _, listen(_, 'mouseleave', handleMouseEnter));
-    let reactOnMouseLeave = _.flow(select, eachElement);
-
-    reactOnMouseLeave('[data-showcase]')
   }
 }

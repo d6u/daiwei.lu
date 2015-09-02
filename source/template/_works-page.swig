@@ -1,4 +1,7 @@
 <div class="o-container__page o-container__page--works">
+{# o-container__page--showcase-pubnationcom #}
+  <div class="o-container__bg"></div>
+
   {% include './_hero.swig' %}
 
   {% for work in works %}
@@ -9,13 +12,11 @@
         {% for project in work.projects %}
           <div class="o-project" data-showcase="{{ project.title | lower | replace('[\.\s]', '', 'g') }}">
 
-            {% if project.keywords.length %}
-              <p class="o-project__keywords">
-                {% for word in project.keywords %}
-                  <span class="o-project__word o-project__word--{{ word | lower | replace('[\.\s]', '', 'g') }}">{{ word }}</span>
-                {% endfor %}
-              </p>
-            {% endif %}
+            <p class="o-project__keywords">
+              {% for word in project.keywords %}
+                <span class="o-project__word o-project__word--{{ word | lower | replace('[\.\s]', '', 'g') }}">{{ word }}</span>
+              {% endfor %}
+            </p>
 
             <h3 class="o-project__title">
               {% if project.link %}

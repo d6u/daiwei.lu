@@ -11,13 +11,13 @@
 
 .o-works__container {
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 
   > * {
     width: 400px;
     margin-bottom: 40px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }

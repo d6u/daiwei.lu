@@ -1,6 +1,11 @@
 .o-navbar {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
 .o-navbar__link-group {
@@ -39,7 +44,8 @@
     }
   }
 
-  &--active {
+  &--active,
+  &:target {
     color: $blue;
   }
 }

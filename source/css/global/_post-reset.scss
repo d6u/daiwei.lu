@@ -1,7 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Lato, sans-serif;
-  background-color: $page-bg;
-  padding-bottom: 100px;
   -webkit-font-smoothing: antialiased;
 }
 

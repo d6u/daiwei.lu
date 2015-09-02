@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Francois+One|Lato:400,900" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="o-container__target--works">
 
 {% block body %}{% endblock %}
 

@@ -26,7 +26,7 @@
 
               {% if project.github %}
                 <a href="{{ project.github }}" target="_blank">
-                  <img src="/img/github-64.png" alt="Github Repo" class="a-icon-github o-project__repo-icon">
+                  <img src="img/github-64.png" alt="Github Repo" class="a-icon-github o-project__repo-icon">
                 </a>
               {% endif %}
 

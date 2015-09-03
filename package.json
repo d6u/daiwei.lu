@@ -21,6 +21,8 @@
     "browser-sync": "^2.8.2",
     "css-loader": "^0.17.0",
     "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "html-loader": "^0.3.0",
     "js-yaml": "^3.4.0",
     "loader-utils": "^0.2.11",
     "lodash": "^3.10.1",

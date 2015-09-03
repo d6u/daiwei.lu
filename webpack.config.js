@@ -22,7 +22,7 @@ module.exports = {
     loaders: [
       {
         test: /\.swig$/,
-        loader: htmlExtractTextPlugin.extract('raw', 'raw!swig?context=./source/content.yml'),
+        loader: htmlExtractTextPlugin.extract('raw', 'html!swig?context=./source/content.yml'),
       },
       {
         test: /\.js$/,
@@ -33,6 +33,10 @@ module.exports = {
         test: /\.scss$/,
         loader: cssExtractTextPlugin.extract('raw', 'css?minimize!autoprefixer!sass?outputStyle=expanded'),
       },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'file',
+      }
     ],
   },
 

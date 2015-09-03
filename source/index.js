@@ -1,15 +1,14 @@
-import './index.scss';
-import _ from 'lodash';
+import curry from 'lodash/function/curry';
 
 const select = selector => document.querySelectorAll(selector);
 
-const listen = _.curry((element, name, handler) =>
+const listen = curry((element, name, handler) =>
   element.addEventListener(name, handler, false));
 
-const addClass = _.curry((element, className) =>
+const addClass = curry((element, className) =>
   element.classList.add(className));
 
-const removeClass = _.curry((element, className) =>
+const removeClass = curry((element, className) =>
   element.classList.remove(className));
 
 // Page switcher

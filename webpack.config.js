@@ -1,34 +1,51 @@
 'use strict';
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack = require('webpack');
+
+var cssExtractTextPlugin = new ExtractTextPlugin('index.css');
+var htmlExtractTextPlugin = new ExtractTextPlugin('index.html');
 
 module.exports = {
-  entry: './source/index.js',
+  entry: {
+    'index.js': './source/index.js',
+    'index.css': './source/index.scss',
+    'index.html': './source/index.swig',
+  },
   devtool: 'source-map',
   output: {
     path: './public',
-    filename: 'index.js',
+    filename: '[name]',
   },
 
   module: {
     loaders: [
       {
+        test: /\.swig$/,
+        loader: htmlExtractTextPlugin.extract('raw', 'raw!swig'),
+      },
+      {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
-        query: {
-          optional: ['runtime', 'es7.objectRestSpread'],
-        },
+        loader: 'babel?optional[]=runtime',
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!autoprefixer!sass?outputStyle=expanded'),
+        loader: cssExtractTextPlugin.extract('raw', 'css?minimize!autoprefixer!sass?outputStyle=expanded'),
       },
     ],
   },
 
   plugins: [
-    new ExtractTextPlugin('index.css'),
+    cssExtractTextPlugin,
+    htmlExtractTextPlugin,
+    new webpack.optimize.UglifyJsPlugin({
+      test: /\.js$/,
+    }),
   ],
+
+  resolveLoader: {
+    modulesDirectories: ['loader', 'node_modules'],
+  },
 
 };

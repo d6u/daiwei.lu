@@ -22,6 +22,7 @@
     "css-loader": "^0.17.0",
     "extract-text-webpack-plugin": "^0.8.2",
     "js-yaml": "^3.4.0",
+    "loader-utils": "^0.2.11",
     "lodash": "^3.10.1",
     "node-sass": "^3.3.2",
     "onchange": "^2.0.0",

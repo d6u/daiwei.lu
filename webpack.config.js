@@ -22,7 +22,7 @@ module.exports = {
     loaders: [
       {
         test: /\.swig$/,
-        loader: htmlExtractTextPlugin.extract('raw', 'raw!swig'),
+        loader: htmlExtractTextPlugin.extract('raw', 'raw!swig?context=./source/content.yml'),
       },
       {
         test: /\.js$/,

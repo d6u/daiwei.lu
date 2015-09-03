@@ -2,12 +2,12 @@ works:
   - header: When I'm at work
     projects:
       - title: PubNation.com
+        link: https://pubnation.com
         keywords:
           - Ember.js
           - Node.js
           - D3.js
           - Babel.js
-          - Sass
           - ElasticSearch
         description: At curiosity media, I helped build not only UIs, but backend modules.
 
@@ -17,13 +17,13 @@ works:
           - Selenium
           - Karma
           - Browserify
-        description: This is a library to be loaded on customers' webpages to collect user AD complaints.
+        description: This is a library to be loaded on customer's webpage to collect AD complaints from visitors.
 
       - title: Chrome Extension
         keywords:
           - Chrome API
           - Browserify
-        description: It integrates with Reporter library, provided more information when reporting an AD.
+        description: It integrates with Reporter library, provided more information while submitting complaints.
 
       - title: HTML Emails
         description: Well... I'm glad we didn't have to be compatible with Outlook 2000.
@@ -39,13 +39,13 @@ works:
           - Firebase
           - Webpack
           - Babel.js
-        description: A real time Magic the Gathering life counter, with which two browsers can be connected and changes in life will be reflected instantaneously.
+        description: A real time Magic the Gathering life counter, with which two browsers can be connected and changes in life will be synced instantaneously.
 
       - title: Web Playground
         link: https://github.com/d6u/web-playground
         keywords:
           - Node.js
-        description: A command line utility to quickly scaffolds a live reloading server with builtin preprocessors for HTML, JavaScript and CSS.
+        description: A command line utility to quickly scaffolds a live reloading server with builtin preprocessors at your command.
 
       - title: Avetuc
         link: https://github.com/d6u/Avetuc
@@ -53,7 +53,7 @@ works:
           - Reactive Extension
           - Swift
           - iOS SDK
-        description: An iOS app (yet to be approved by Apple) that aggregating Twitter timeline by friends and mark unread tweets, so you never miss any.
+        description: An iOS app (yet to be approved by Apple) that aggregates Twitter timeline by friends and remembers unread tweets, so you never miss any.
 
       - title: TapLabel
         link: https://github.com/d6u/TapLabel
@@ -74,4 +74,4 @@ works:
         keywords:
           - Node.js
           - Babel.js
-        description: A framework for building static webpages. It comes with asset hashing utilities to bust browser cache by appending hash strings to urls.
+        description: A framework for building static webpages. It comes with asset hashing utilities to help bust browser cache by appending hash string to urls.

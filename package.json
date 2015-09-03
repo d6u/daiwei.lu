@@ -32,8 +32,7 @@
     "webpack": "^1.12.0"
   },
   "scripts": {
-    "build:html": "babel-node script/build.js",
-    "predev": "rm -rf public && mkdir -p public && npm run build:html",
-    "dev": "browser-sync start --config bs-config.js & webpack -w & onchange 'source/**/*.{swig,yml}' -- npm run build:html"
+    "predev": "rm -rf public",
+    "dev": "browser-sync start --config bs-config.js & webpack -w"
   }
 }

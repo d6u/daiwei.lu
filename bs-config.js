@@ -3,8 +3,8 @@ module.exports = {
   injectChanges: false,
   notify: false,
   open: false,
-  files: ['public/*', 'static/**/*'],
+  files: ['public/*'],
   server: {
-    baseDir: ['public', 'static']
+    baseDir: ['public']
   },
 };

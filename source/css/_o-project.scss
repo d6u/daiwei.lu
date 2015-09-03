@@ -91,4 +91,12 @@
 .o-project__description {
   font-size: 16px;
   line-height: 1.5;
+
+  a {
+    transition: color 300ms;
+    color: $blue;
+    &:hover {
+      color: darken($blue, 20%);
+    }
+  }
 }

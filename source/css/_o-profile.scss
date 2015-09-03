@@ -1,0 +1,25 @@
+.o-profile {
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.o-profile__box {
+  width: 45%;
+  margin-bottom: 80px;
+}
+
+.o-profile__header {
+  font-family: Francois One, sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.o-profile__text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}

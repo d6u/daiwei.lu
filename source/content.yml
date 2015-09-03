@@ -1,3 +1,12 @@
+email: daiweilu123@gmail.com
+github: https://github.com/d6u
+blog: http://daiwei.lu/
+twitter: https://twitter.com/daiweilu
+
+who_i_am: My name is Daiwei Lu. I'm a front end developer. While building UIs, I pay attention to user experiences. I believe the best UIs are not the fancy ones, but those users spend less time on and keep coming back to. I'm also a software engineer. Although it's true that things users touch interests me most, underlying architectures that made everything possible are also facinating to me. A better architecture ensures engineers spend less time on software and more time on humanity.
+
+what_i_do: When I'm not hacking with web technologies, I develop iOS app. Sometime I also give talks about thing I'm excited with. When I'm offline, I go biking and hangout with friends.
+
 works:
   - header: When I'm at work
     projects:
@@ -75,3 +84,16 @@ works:
           - Node.js
           - Babel.js
         description: A framework for building static webpages. It comes with asset hashing utilities to help bust browser cache by appending hash string to urls.
+
+  - header: When I'm not hacking
+    projects:
+      - title: Promise in JS Meetup Speaking
+        link: http://www.meetup.com/Nova-Node/events/221268375/
+        description: I gave a speech on "Tame your Callback using Promises". Slides can be found <a target="_blank" href="http://slides.com/daiweilu/tame-your-callbacks">here</a>.
+
+      - title: Lunch and Learn
+        description: I also organize and give lunch talks about interesting topics in software engineering in work place.
+
+      - title: StackOverflow
+        link: http://stackoverflow.com/users/1544590/daiwei?tab=profile
+        description: Sometime I help people and look for helps. :]

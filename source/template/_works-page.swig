@@ -1,5 +1,4 @@
 <div class="o-container__page o-container__page--works">
-{# o-container__page--showcase-pubnationcom #}
   <div class="o-container__bg"></div>
 
   {% include './_hero.swig' %}
@@ -32,7 +31,7 @@
               {% endif %}
 
             </h3>
-            <p class="o-project__description">{{ project.description }}</p>
+            <p class="o-project__description">{{ project.description | safe }}</p>
           </div>
         {% endfor %}
 

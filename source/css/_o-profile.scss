@@ -1,13 +1,28 @@
+@mixin profile-respond-lt-800() {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
 .o-profile {
   padding: 0 80px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include profile-respond-lt-800() {
+    display: block;
+    padding: 0 20px;
+  }
 }
 
 .o-profile__box {
   width: 45%;
   margin-bottom: 80px;
+
+  @include profile-respond-lt-800() {
+    width: auto;
+  }
 }
 
 .o-profile__header {

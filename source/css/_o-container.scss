@@ -1,3 +1,15 @@
+@mixin container-respond-lt-800() {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin container-respond-lt-510() {
+  @media (max-width: 510px) {
+    @content;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -6,6 +18,10 @@ body {
   @extend %clearfix;
   width: 200vw;
   transition: transform 300ms cubic-bezier(0.70, 0, 0.30, 1); // ease in out
+
+  @include container-respond-lt-800() {
+    width: auto;
+  }
 }
 
 .o-container__page {
@@ -16,12 +32,20 @@ body {
   padding-bottom: 100px;
   overflow: hidden;
 
+  @include container-respond-lt-510() {
+    padding-top: 100px;
+  }
+
   &--works {
     background-color: $page-bg;
   }
 
   &--profile {
     background-color: $page-bg;
+  }
+
+  @include container-respond-lt-800() {
+    padding-bottom: 0;
   }
 }
 
@@ -31,6 +55,10 @@ body {
 
   .o-container__page--profile {
     height: 100vh;
+
+    @include container-respond-lt-800() {
+      height: auto;
+    }
   }
 
   .o-container {
@@ -42,6 +70,10 @@ body {
 
   .o-container__page--works {
     height: 100vh;
+
+    @include container-respond-lt-800() {
+      height: auto;
+    }
   }
 
   .o-container {

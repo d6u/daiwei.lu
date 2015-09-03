@@ -9,7 +9,7 @@
       <div class="o-works__container">
 
         {% for project in work.projects %}
-          <div class="o-project" data-showcase="{{ project.title | lower | replace('[\.\s]', '', 'g') }}">
+          <div class="o-project o-works__project" data-showcase="{{ project.title | lower | replace('[\.\s]', '', 'g') }}">
 
             <p class="o-project__keywords">
               {% for word in project.keywords %}

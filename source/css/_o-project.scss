@@ -1,3 +1,9 @@
+@mixin works-respond-lt-390() {
+  @media (max-width: 390px) {
+    @content;
+  }
+}
+
 .o-project {
   display: flex;
   flex-direction: column;
@@ -8,7 +14,11 @@
   font-weight: 900;
   line-height: 1.5;
   margin-bottom: 10px;
-  height: 24px;
+  min-height: 24px;
+
+  @include works-respond-lt-390() {
+    min-height: auto;
+  }
 }
 
 .o-project__word {
@@ -75,6 +85,7 @@
   font-family: Francois One, sans-serif;
   font-size: 36px;
   margin-bottom: 10px;
+  line-height: 1.1;
 
   a {
     transition: color 300ms;

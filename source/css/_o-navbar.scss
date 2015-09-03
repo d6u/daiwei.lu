@@ -1,3 +1,15 @@
+@mixin navbar-respond-lt-800() {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin navbar-respond-lt-510() {
+  @media (max-width: 510px) {
+    @content;
+  }
+}
+
 .o-navbar {
   display: flex;
   justify-content: space-between;
@@ -6,10 +18,24 @@
   top: 0;
   left: 0;
   width: 100vw;
+
+  @include navbar-respond-lt-510() {
+    display: block;
+  }
 }
 
 .o-navbar__link-group {
   padding: 20px 30px;
+
+  @include navbar-respond-lt-800() {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include navbar-respond-lt-510() {
+    padding: 10px 10px 0 10px;
+  }
 }
 
 .o-navbar__link {
@@ -44,8 +70,13 @@
     }
   }
 
-  &--active,
-  &:target {
+  &--active {
     color: $blue;
+  }
+
+  @include navbar-respond-lt-800() {
+    &::after {
+      content: normal;
+    }
   }
 }

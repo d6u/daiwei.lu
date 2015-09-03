@@ -1,13 +1,34 @@
+@mixin hero-respond-lt-800() {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin hero-respond-lt-390() {
+  @media (max-width: 390px) {
+    @content;
+  }
+}
+
 .o-hero {
   @extend %clearfix;
   margin-top: 100px;
   margin-bottom: 200px;
+  padding: 0 50px;
+
+  @include hero-respond-lt-390() {
+    padding: 0 20px;
+  }
 }
 
 .o-hero__container {
   width: 700px;
   float: right;
-  margin-right: 50px;
+
+  @include hero-respond-lt-800() {
+    float: none;
+    width: 100%;
+  }
 }
 
 .o-hero__paragraph {

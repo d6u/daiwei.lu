@@ -1,7 +1,24 @@
+@mixin works-respond-lt-510() {
+  @media (max-width: 510px) {
+    @content;
+  }
+}
+
+@mixin works-respond-lt-390() {
+  @media (max-width: 390px) {
+    @content;
+  }
+}
+
 .o-works {
   padding: 0 80px;
+
   & + & {
     margin-top: 60px;
+  }
+
+  @include works-respond-lt-510() {
+    padding: 0 20px;
   }
 }
 
@@ -16,8 +33,20 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  > * {
+  .o-works__project {
     width: 350px;
     margin-bottom: 40px;
+  }
+
+  @include works-respond-lt-510() {
+    justify-content: space-around;
+  }
+
+  @include works-respond-lt-390() {
+    display: block;
+    .o-works__project {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 }

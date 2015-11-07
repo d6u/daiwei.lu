@@ -49,7 +49,8 @@
   &--selenium {
     color: #B0B0B1;
   }
-  &--karma {
+  &--karma,
+  &--kubernetes {
     color: #41BEAE;
   }
   &--browserify {
@@ -58,7 +59,8 @@
   &--chromeapi {
     color: #508FBF;
   }
-  &--reactjs {
+  &--reactjs,
+  &--docker {
     color: #5DDBFD;
   }
   &--flux {
@@ -76,8 +78,12 @@
   &--swift {
     color: #FE6C2D;
   }
-  &--iossdk {
+  &--iossdk,
+  &--slimerjs {
     color: #000101;
+  }
+  &--redis {
+    color: #E74C3C;
   }
 }
 

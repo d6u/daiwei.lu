@@ -3,13 +3,22 @@ github: https://github.com/d6u
 blog: http://blog.daiwei.lu/
 twitter: https://twitter.com/daiweilu
 
-who_i_am: My name is Daiwei Lu. I'm a front end developer. While building UIs, I pay attention to user experiences. I believe the best UIs are not the fancy ones, but those users spend less time on and keep coming back to. I'm also a software engineer. Although it's true that things users touch interests me most, underlying architectures that made everything possible are also fascinating to me. A better architecture ensures engineers spend less time on software and more time on humanity.
+who_i_am: My name is Daiwei Lu. I'm a full stack developer. While building UIs, I pay attention to user experiences. I believe the best UIs are not the fancy ones, but those users spend less time on and keep coming back to. I'm also a software engineer. Although it's true that things users touch interests me most, underlying architectures that made everything possible are also fascinating to me. A better architecture ensures engineers spend less time on software and more time on humanity.
 
 what_i_do: When I'm not hacking with web technologies, I develop iOS app. Sometime I also give talks about thing I'm excited with. When I'm offline, I go biking and hangout with friends.
 
 works:
   - header: When I'm at work
     projects:
+      - title: Background Job Server
+        keywords:
+          - Node.js
+          - Redis
+          - Kubernetes
+          - Docker
+          - SlimerJS
+        description: A containerized, Redis powered job schedular server to process delayed and scheduled background jobs. Deploy with Kubernetes on Google Container Cluster.
+
       - title: PubNation.com
         link: https://pubnation.com
         keywords:

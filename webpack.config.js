@@ -27,7 +27,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel?optional[]=runtime',
+        loader: 'babel?presets[]=es2015&plugins[]=transform-runtime',
       },
       {
         test: /\.scss$/,

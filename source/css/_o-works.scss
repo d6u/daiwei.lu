@@ -30,16 +30,20 @@
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 
   .o-works__project {
     width: 350px;
     margin-bottom: 40px;
+    margin-right: 40px;
   }
 
   @include works-respond-lt-510() {
     justify-content: space-around;
+    .o-works__project {
+      margin-right: 0;
+    }
   }
 
   @include works-respond-lt-390() {

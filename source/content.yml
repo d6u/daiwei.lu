@@ -13,10 +13,10 @@ works:
       - title: Background Job Server
         keywords:
           - Node.js
-          - Redis
           - Kubernetes
           - Docker
           - SlimerJS
+          - Redis
         description: A containerized, Redis powered job schedular server to process delayed and scheduled background jobs. Deploy with Kubernetes on Google Container Cluster.
 
       - title: PubNation.com
@@ -48,6 +48,12 @@ works:
 
   - header: I spend my spare time on
     projects:
+      - title: Web Playground
+        link: https://github.com/d6u/web-playground
+        keywords:
+          - Node.js
+        description: A command line utility to quickly scaffolds a live reloading server with builtin preprocessors at your command.
+
       - title: Magic Board
         link: http://magic-board.daiwei.lu
         github: https://github.com/d6u/magic-board
@@ -59,19 +65,13 @@ works:
           - Babel.js
         description: A real time Magic the Gathering life counter, with which two browsers can be connected and changes in life will be synced instantaneously.
 
-      - title: Web Playground
-        link: https://github.com/d6u/web-playground
-        keywords:
-          - Node.js
-        description: A command line utility to quickly scaffolds a live reloading server with builtin preprocessors at your command.
-
       - title: Avetuc
         link: https://github.com/d6u/Avetuc
         keywords:
           - Reactive Extension
           - Swift
           - iOS SDK
-        description: An iOS app (yet to be approved by Apple) that aggregates Twitter timeline by friends and remembers unread tweets, so you never miss any.
+        description: An iOS app (<a target="_blank" href="https://itunes.apple.com/ca/app/avetuc/id1028934658">iOS App Store</a>) that aggregates Twitter timeline by friends and remembers unread tweets, so you never miss any.
 
       - title: TapLabel
         link: https://github.com/d6u/TapLabel
@@ -96,6 +96,10 @@ works:
 
   - header: When I'm not hacking
     projects:
+      - title: Reactive Programing with RxJS
+        link: http://www.meetup.com/React-DC/events/225703899/
+        description: A talk in ReactDC meetup. It covers basic concept of reactive programing and how to apply those concepts in JavaScript in RxJS and React.
+
       - title: Promise in JS Meetup Speaking
         link: http://www.meetup.com/Nova-Node/events/221268375/
         description: I gave a speech on "Tame your Callback using Promises". Slides can be found <a target="_blank" href="http://slides.com/daiweilu/tame-your-callbacks">here</a>.

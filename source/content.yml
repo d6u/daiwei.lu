@@ -48,6 +48,12 @@ works:
 
   - header: I spend my spare time on
     projects:
+      - title: React Container Query
+        link: https://github.com/d6u/react-container-query
+        keywords:
+          - React.js
+        description: A higher order component to help build responsive component using the concept of container query.
+
       - title: Web Playground
         link: https://github.com/d6u/web-playground
         keywords:
@@ -96,6 +102,10 @@ works:
 
   - header: When I'm not hacking
     projects:
+      - title: Media Query Breaks Modularity, Use Container Query
+        link: http://d6u.github.io/react-container-query/
+        description: An interactive article I wrote explaining the weaknesses of media query and why we should use CSS container query.
+
       - title: Reactive Programing with RxJS
         link: http://www.meetup.com/React-DC/events/225703899/
         description: A talk in ReactDC meetup. It covers basic concept of reactive programing and how to apply those concepts in JavaScript in RxJS and React.
